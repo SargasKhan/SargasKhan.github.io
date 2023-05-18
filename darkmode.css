@@ -1,0 +1,78 @@
+
+body.dark{
+    background-color: #1E1E1E;
+}
+
+body.dark header{
+    background-color: #1E1E1E;
+}
+
+body.dark .logo{
+    background-color: #1E1E1E;
+    content: url('Imagenes/logo_a2.png');
+}
+
+body.dark #título{
+    background-color: #1E1E1E;
+    color:white;
+}
+
+body.dark .seccion1{
+    background-color: #1E1E1E;
+}
+
+body.dark .seccion2{
+    background-color: #1E1E1E;
+}
+
+body.dark .botones{
+    background-color: #1E1E1E;
+}
+
+body.dark .boton{
+    background-color: #1E1E1E;
+}
+
+body.dark .caja-texto{
+    background-color: #424242;
+    color: white;
+}
+
+body.dark .caja-texto::placeholder{
+    color:#ffffff;
+    opacity: 50%;
+}
+
+body.dark .caja-encriptado{
+    background-color: #424242;
+    color: white;
+}
+
+body.dark .btn-encriptar{
+
+    box-shadow: 6px 6px 12px #000000;
+}
+    
+body.dark .btn-desencriptar{
+    
+    box-shadow: 6px 6px 12px #000000;
+}
+    
+body.dark .btn-copiar{
+    
+    box-shadow: 6px 6px 12px #000000;
+}
+
+body.dark .btn-limpiar{
+    
+    box-shadow: 6px 6px 12px #000000;
+}
+    
+body.dark footer{
+    background-color: #1E1E1E;
+}
+
+body.dark footer p{
+    background-color: #1E1E1E;
+    color: white;
+}

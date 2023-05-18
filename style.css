@@ -1,0 +1,358 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4fc;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    transition: background-color .8s;
+    
+}
+
+
+
+header{
+    width: 100%;
+    /*background: black;*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    
+}
+
+.logo{
+    padding: 50px,20px;
+    width: 1.3rem;
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    /*background: blue;*/
+
+}
+
+.título{
+    /*background: blue;*/
+    font-size: 1.8rem;
+    display: inline-block;
+    color: rgb(69, 36, 146);
+    font-weight: bolder;
+    letter-spacing: 10px;
+    overflow-wrap: break-word;
+    
+}
+
+main{
+    margin-top: 5%;
+    display: flex;
+    position: relative;
+    /*background: pink;*/
+}
+
+.seccion1{
+    /*background: black;*/
+    height: 21rem;
+    width: 50%;
+    position: relative;
+    
+}
+
+.caja-texto{
+    padding: 0.5rem;
+    position: absolute;
+    left:15%;
+    top:5%;
+    width: 75%;  
+    border: solid;
+    border-radius: 20px;
+    border-color: #8ab7ee;
+    border-width: 2px;
+    color: #0a3871;
+    text-transform: lowercase;
+    background-color: white;
+    cursor: text;
+    
+}
+
+.caja-texto::placeholder{
+    color: #0a3871;
+    opacity: 70%;
+}
+
+.seccion2{
+   /* background: red;*/
+    height: 21rem;
+    width: 50%;
+    position: relative;
+    
+}
+.caja-encriptado{
+    padding:0.5rem;
+    position: absolute;
+    border:solid;
+    top:5%;
+    right: 15%;
+    width:75%;
+    border: solid;
+    border-radius: 20px;
+    border-color: #8ab7ee;
+    border-width: 2px;
+    color: #0a3871;
+    text-transform: lowercase;
+    background-color: white;
+    background-image: url(Imagenes/hacker-friend2.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: text;
+}
+
+.caja-texto:active, .caja-texto:focus, .caja-encriptado:focus, .caja-encriptado:active{
+    outline-color: #0457bd;
+}
+
+.botones{
+    /*background: purple;*/
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 85%;
+    padding-left:10%;
+}
+
+.btn-encriptar{
+    padding: 10px 30px;
+    font-size: .8rem;
+    margin-right: 10px;
+    color: #000000;
+    background: rgb(221,221,221);
+    border-radius: 20px;
+    border:none;
+    box-shadow: 6px 6px 12px #353535, -6px -6px 12px #ffffff;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.btn-desencriptar{
+    padding: 10px 30px;
+    font-size: .8rem;
+    color: #000000;
+    background: rgb(221,221,221);
+    border-radius: 20px;
+    border:none;
+    box-shadow: 4px 4px 12px #353535, -4px -4px 12px #ffffff;
+    cursor: pointer;
+    transition: background-color .5s;
+    margin-right: 3%;
+}
+
+.btn-copiar:hover, .btn-desencriptar:hover, .btn-encriptar:hover, .btn-limpiar:hover{
+    background-color: crimson;
+    font-weight: bolder;
+}
+
+.btn-copiar:active, .btn-desencriptar:active, .btn-encriptar:active, .btn-limpiar:active{
+    background-color: crimson;
+    font-weight: bolder;
+    transform: translateY(4px);
+    box-shadow: 2px 2px 5px #575757, -2px -2px 12px #f4f4fc;
+}
+
+.boton{
+    display:block;
+    position: relative;
+    text-align: center;
+    top:85%;
+    padding-right: 15%;
+ /*   background: black;*/
+    
+}
+
+.btn-copiar{
+    padding: 10px 30px;
+    margin-right: 10px;
+    font-size: .8rem;
+    color: #000000;
+    background: rgb(221,221,221);
+    border-radius: 20px;
+    border:none;
+    box-shadow: 4px 4px 12px #353535, -4px -4px 12px #ffffff;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.btn-limpiar{
+    padding: 10px 30px;
+    font-size: .8rem;
+    color: #000000;
+    background: rgb(221,221,221);
+    border-radius: 20px;
+    border:none;
+    box-shadow: 4px 4px 12px #353535, -4px -4px 12px #ffffff;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+footer{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10px;
+}
+
+/************Responsivo 900px******************/
+
+@media (max-width:900px) {
+*{
+    font-size: 1.5rem;
+}
+    main{
+        display: block;
+        background-color: pink;
+        height: 1000px;
+    }
+    .seccion1{
+        width: 100%;
+       /* background: black;*/
+        display: block;
+        height: 50%;
+        
+    }
+
+    .seccion2{
+        width: 100%;
+       /* background: red;*/
+        display: block;
+        height: 50%;
+    }
+
+     .caja-texto{
+        width: 70%;
+        height: 70%;
+        padding: 0.5rem;
+        position: absolute;
+        left: 13%;
+        font-size: 1.5rem;
+        
+    }
+
+    .botones{
+        /*background: purple;*/
+        text-align: center;
+        top: 83%;
+        padding-left:0;
+    }
+
+    .caja-encriptado{
+        width:70%;
+        padding:0.5rem;
+        position: absolute;
+        top:5%;
+        left: 13%;
+        height: 70%;    
+        
+    }
+
+    .boton{
+        
+        position: relative;
+        text-align: center;
+        padding-left: 12%;
+        top:85%;
+       /* background: black;*/
+        
+    }
+    
+    footer{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10%;
+        padding-top: 10px;
+        font-size: 0.5rem;
+    }
+
+    footer p{
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+    
+}
+
+/*********************responsivo 500px******************************/
+
+@media (max-width:500px) {
+   
+
+    .título{
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+    }
+
+    .logo{
+        width: 5%;
+    }
+
+    .caja-texto{
+        font-size: 1.5rem;
+              
+    }
+}
+
+
+
+    /*********************responsivo 350px******************************/
+
+@media (max-width:350px) {
+    .título{
+        font-size: .9rem;
+    }
+
+    .logo{
+        width: 5%;
+    }
+
+    .boton{
+        
+        position: relative;
+        text-align: center;
+        top:85%;
+        padding-left: 0%;
+       /* background: black;*/
+        
+    }
+
+    .botones{
+        padding-left: 0%;
+    }
+
+    .btn-encriptar{
+        padding: 6px 15px;
+        font-size: .8rem;
+        margin-right: 10px;
+    }
+
+    .btn-desencriptar{
+        padding: 6px 15px;
+        font-size: .8rem;
+        margin-right: 10px;
+    }
+
+    .btn-copiar{
+        padding: 6px 15px;
+        font-size: .8rem;
+        margin-right: 10px;
+    }
+    
+    .btn-limpiar{
+        padding: 6px 15px;
+        font-size: .8rem;
+        margin-right: 10px;
+    }
+    
+    
+
+}
+   

@@ -1,0 +1,133 @@
+/****** Hide default HTML checkbox *********/
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/******** The slider *********/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 25%;
+    left: 88%;
+    background-color: rgb(255, 255, 255);
+    border: #000000;
+    border-style: solid;
+    border-width: 1.5px;
+    transition: 0.4s;
+    border-radius: 30px;
+    width: 3rem;
+    height: 50%;
+    
+}
+
+.slider::before {
+    position: absolute;
+    content: '';
+    height: var(--size-of-icon, 70%);
+    width: var(--size-of-icon, 1rem);
+    border-radius: 20px;
+    left: var(--slider-offset, 0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: 0.2s;
+}
+
+input:checked + .slider{
+    background-color: #000000;
+    border: black;
+    border-style: solid;
+    border-width: 1.5px;
+
+}
+
+input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon, 1em) + var(--slider-offset, 0.3em)));
+    background: #000000;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -3px 10px -2px #08009b, inset -35px -8px 0 0 #eeeb22;
+    
+    /*inset -3px -2px 5px -2px #08009b, inset -15px -8px 0 0 #eeeb22*/
+    /*7ddcec = blue*/
+    /*eeeb22 = yellow*/
+}
+
+
+/************Responsivo 900px******************/
+
+@media (max-width:900px) {
+    .slider {
+        width: 3rem;
+        height: 50%;
+        left: 85%;
+    }
+    
+    .slider::before {
+        height: var(--size-of-icon, 75%);
+        width: var(--size-of-icon, 1rem);
+        transform: translateY(-50%) translateX(-20%);
+    }
+    
+    input:checked + .slider:before {
+        left: calc(35% + (var(--size-of-icon, .5em) + var(--slider-offset, 0.1em)));
+        background: #000000;
+        /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+        box-shadow: inset -3px -2px 5px -2px #08009b, inset 30px -8px 0 0 #eeeb22
+    
+    }
+}
+
+/*********************responsivo 500px******************************/
+
+@media (max-width:500px) {
+
+    .slider {
+        width: 2rem;
+        height: 50%;
+        left: 85%;
+    }
+    
+    .slider::before {
+        height: var(--size-of-icon, 65%);
+        width: var(--size-of-icon, .9rem);
+        transform: translateY(-50%) translateX(-30%);
+    }
+    
+    input:checked + .slider:before {
+        left: calc(20% + (var(--size-of-icon, .5em) + var(--slider-offset, 0.1em)));
+        background: #000000;
+        /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+        box-shadow: inset -3px -2px 5px -2px #08009b, inset 30px -8px 0 0 #eeeb22
+    
+    }
+}
+
+ /*********************responsivo 350px******************************/
+
+ 
+
+@media (max-width:350px) {
+    .slider {
+        width: 1.5rem;
+        height: 35%;
+        top:35%
+        
+    }
+    
+    .slider::before {
+        height: var(--size-of-icon, 70%);
+        width: var(--size-of-icon, .7rem);
+        transform: translateY(-50%) translateX(-40%);
+    }
+    
+    input:checked + .slider:before {
+        left: calc(6% + (var(--size-of-icon, .5em) + var(--slider-offset, 0.1em)));
+        background: #000000;
+        /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+        box-shadow: inset -3px -2px 5px -2px #08009b, inset -25px -8px 0 0 #eeeb22
+    
+        
+    }
+}

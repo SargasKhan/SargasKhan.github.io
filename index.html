@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name = "viewport" content="width=device-width, initial-scale=1.0"-->
+    <link rel = "preconnect" href="https://fonts.googleapis.com">
+    <link rel = "preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="style switch.css">
+
+    <title>Encriptador de Texto</title>
+
+</head>
+    <body>
+        <header>
+                        <img class = "logo" id = "logo" src="Imagenes/Logo.png" alt="Logo de Alura">
+            <h1 class = "título" id = "título"> Encriptador </h1>
+            <label class = "switch" id = "switch">
+                <input type = "checkbox" id="darkmode">
+                <span class = "slider"> 
+                </span>
+            </label>
+        </header>
+
+        <main>
+
+            <!--Sección 1 contiene caja de texto y botones-->
+            <section class = "seccion1" id = "seccion1"> 
+                <textarea placeholder="Ingrese el texto aquí" id = "texto" class = "caja-texto" autocomplete="off" rows="10" cols ="40"></textarea>
+                <div class="botones" id="botones">    
+                    <button class = "btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                    <button class = "btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                </div>
+           </section>  
+
+           <section class="seccion2" id="seccion2">
+            <textarea id = "caja-encriptado" class = "caja-encriptado" autocomplete="off" rows="10" cols ="40"></textarea>
+            <div class = "boton" id="boton">
+                <button class="btn-copiar" type="button" onclick="copiar()">Copiar</button>
+                <button class="btn-limpiar" type="button" onclick="limpiar()">Limpiar</button>
+            </div>
+           </section>
+        
+        </main>
+
+        <footer>
+            
+            
+        <p>⚠️ Utiliza solo letras minúsculas y sin acentos ⚠️</p>
+
+        </footer>
+
+        <script src="script.js"></script>
+        
+    </body>
